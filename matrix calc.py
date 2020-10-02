@@ -76,8 +76,12 @@ matrixRank)
 #print the determinant of the matrix
 print("El determinante de la matriz es: \n",
 matrixDet)
+if squareMatrix == False:
+    print("No se puede calcular el determinante dado que la matriz ingresada no es cuadrada...")
 
 #in case the determinant is not 0, print the inverse
+if squareMatrix == False:
+    print("No se puede calcular la inversa dado que la matriz ingresada no es cuadrada...")
 if matrixDet != 0:
     print("La inversa de la matriz es: \n",
     matrixInverse)
